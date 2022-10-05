@@ -132,38 +132,6 @@ $z-modal: 1000;
 
 @include google-font("lato", "100;300;400");
 
-//_________________
-//------BASE-------
-//=================
-// -------------------
-// -----TYPOGRAPHY-----
-// -------------------
-// @include helpers.google-font(font-name1);
-// @include helpers.google-font(font-name2);
-// or
-// @import url();
-// @font-face {
-//   font-family: "fontName";
-//   font-weight: "400";
-//   src: url("./fonts/fontName-normal.ttf"); //IE-9 Compat Modes
-//   src: url("./fonts/fontName-normal.ttf") format("embeded-opentype"),
-//     url("./fonts/fontName-normal.ttf") format("woff"),
-//     url("./fonts/fontName-normal.ttf") format("woff2"),
-//     url("./fonts/fontName-normal.ttf") format("truetype"),
-//     url("./fonts/fontName-normal.ttf") format("svg");
-// }
-
-// Common weight name mapping
-// 100 - thin
-// 200 - extra-light
-// 300 - light
-// 400 - normal/regular
-// 500 - medium
-// 600 - semi-bold
-// 700 - bold
-// 800 - extra-bold
-// 900 - black
-
 // -------------------
 // -----GLOBALS-----
 // -------------------
@@ -191,20 +159,6 @@ body {
   margin: 0;
 }
 
-main {
-}
-
-h1 {
-  margin: 0.67rem 0;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  padding: 0;
-}
-
 ul {
   list-style: none;
 }
@@ -215,34 +169,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
   border-style: none;
 }
-
-/*--- REUSEABLE CLASSES ---*/
-// .container,
-// .row {
-//   max-width: $width-content;
-//   margin: 0 auto;
-// }
-
-// .section {
-//   padding: $sp-2;
-// }
-
-// .section__title {
-//   font-size: $font-h2;
-// }
-
-// .section__sub-title {
-//   display: block;
-//   font-size: $font-h3;
-// }
-
-// .section__title,
-// .section__sub-title {
-//   text-align: center;
-//   letter-spacing: 1px;
-//   word-spacing: $sp-0-25;
-// }
