@@ -7,20 +7,20 @@
 // ------Color Variables-------
 $color-white: #fff;
 $color-black: #000;
-$color-grey: #333;
-$color-grey-dark: #333;
-$color-grey-light: darken($color-white, 5%);
+$color-grey: #888;
+$color-grey-dark: darken($color-grey, 25%);
+$color-grey-light: lighten($color-grey, 25%);
 
 $color-map: (
-  primary: #111,
-  accent: #111,
-  secondary: #222,
-  tertiary: #333,
+  primary: #030303,
+  accent: #606060,
+  secondary: #f8f8f8,
+  border: #ccc,
   headline: $color-white,
-  menu-items: #111,
-  text: $color-grey-dark,
+  text: #030303,
   link: #111,
   body: $color-white,
+  body-background: #f9f9f9,
   container: $color-grey-light,
 );
 

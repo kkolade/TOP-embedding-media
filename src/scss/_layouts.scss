@@ -85,7 +85,11 @@
   }
 }
 //------Main-------
-
+.content-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: b.$sp-1-25 * 2 0;
+}
 //---Section= Section_Name----
 
 //------Aside-------
