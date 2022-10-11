@@ -86,9 +86,116 @@
 }
 //------Main-------
 .content-container {
+  display: flex;
+  gap: b.$sp-1-5;
   width: 80%;
   margin: 0 auto;
   padding: b.$sp-1-25 * 2 0;
+}
+
+.main {
+  flex-basis: 55%;
+  &__video-card {
+    margin: b.$sp-1-5 0;
+
+    &-title {
+      font-weight: b.font-weight(regular);
+      font-size: b.font-size(h3);
+    }
+
+    &-content {
+      display: flex;
+      margin: b.$sp-1-25 0;
+      justify-content: space-between;
+
+      .stats {
+        display: flex;
+        gap: b.$sp-1-5;
+
+        .fas {
+          display: inline-block;
+          padding-right: b.$sp-0-5;
+        }
+      }
+    }
+  }
+
+  &__channel-card {
+    display: flex;
+    gap: b.$sp-2;
+  }
+
+  &__card-header {
+    img {
+      display: inline-block;
+      width: b.$sp-2 * 3;
+    }
+  }
+
+  &__card-content {
+    .channel-name {
+      font-size: b.font-size(normal) * 0.9;
+    }
+    .num-subscriber {
+      font-size: b.font-size(small);
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      margin: b.$sp-1-5 0;
+    }
+    .subscribe {
+      padding: b.$sp-0-75 b.$sp-2;
+      color: #fff;
+      background-color: rgb(204, 0, 0);
+      border-radius: b.$sp-0-25;
+    }
+  }
+}
+
+.side-bar {
+  .sidebar-header {
+    white-space: nowrap;
+    span {
+      &:first-of-type {
+        color: white;
+        background-color: #000;
+      }
+      display: inline-block;
+      padding: b.$sp-0-5 b.$sp-1-25;
+      border-radius: b.$sp-2;
+      color: #000;
+      font-size: b.font-size(normal);
+      margin: b.$sp-0-25 b.$sp-0-5;
+      background-color: #f0f0f0;
+    }
+  }
+
+  .video-card-container {
+    .video-card {
+      display: flex;
+      padding: b.$sp-0-5 0;
+
+      .video-card-placeholder {
+        display: inline-block;
+        width: 40%;
+      }
+
+      .video-card-content {
+        flex-basis: 1 0 50%;
+        padding-left: b.$sp-0-5;
+
+        .header {
+          font-size: b.font-size(small);
+          margin: b.$sp-1 0;
+        }
+
+        .text-content {
+          font-size: b.font-size(smaller);
+        }
+      }
+    }
+  }
 }
 //---Section= Section_Name----
 
